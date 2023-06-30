@@ -4,7 +4,7 @@
   "description": "Simple referral system",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ./src/**/*"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/yeisoncruz16/tinfluence/issues"
   },
-  "homepage": "https://github.com/yeisoncruz16/tinfluence#readme"
+  "homepage": "https://github.com/yeisoncruz16/tinfluence#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "eslint": "^8.43.0",
+    "eslint-config-standard-with-typescript": "^36.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.9.3"
+  }
 }

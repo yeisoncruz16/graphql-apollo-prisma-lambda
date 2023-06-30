@@ -1,0 +1,17 @@
+{
+  "env": {
+    "node": true,
+    "es2022": true
+  },
+  "extends": "standard-with-typescript",
+  "overrides": [
+    {
+      "files": [".eslintrc.{js,cjs}"]
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 14,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+}
