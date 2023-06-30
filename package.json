@@ -1,0 +1,19 @@
+{
+  "name": "tinfluence",
+  "version": "1.0.0",
+  "description": "Simple referral system",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeisoncruz16/tinfluence.git"
+  },
+  "author": "yeisoncruz16",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeisoncruz16/tinfluence/issues"
+  },
+  "homepage": "https://github.com/yeisoncruz16/tinfluence#readme"
+}
