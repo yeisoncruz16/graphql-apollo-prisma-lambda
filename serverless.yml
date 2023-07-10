@@ -1,0 +1,19 @@
+service: tinfluence
+provider:
+  name: aws
+  runtime: nodejs18.x
+  httpApi:
+    cors: true
+functions:
+  graphql:
+    handler: src/server.handler
+    events:
+      - httpApi:
+          path: /graphql
+          method: POST
+      - httpApi:
+          path: /graphql
+          method: GET
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
