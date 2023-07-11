@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint ./src/**/*",
     "build": "tsc",
-    "start": "sls offline"
+    "start": "tsc --project tsconfig.json --outDir .build && cp app/dependencyInjection/application.yml .build/app/dependencyInjection/application.yml && sls offline"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,9 @@
     "@apollo/server": "^4.7.5",
     "@as-integrations/aws-lambda": "^2.0.1",
     "@prisma/client": "^4.16.2",
+    "bcrypt": "^5.1.0",
     "graphql": "^16.7.1",
+    "node-dependency-injection": "^3.1.0",
     "prisma": "^4.16.2",
     "serverless": "^3.33.0"
   }
