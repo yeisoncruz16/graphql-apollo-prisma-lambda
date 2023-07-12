@@ -1,3 +1,7 @@
 services:
   services.user:
-    class: ../services/user
+    class: ../services/users/index
+    arguments: ['@useCases.createUser']
+
+  useCases.createUser:
+    class: ../useCases/CreateUser/index

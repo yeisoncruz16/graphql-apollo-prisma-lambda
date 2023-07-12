@@ -1,0 +1,30 @@
+export default `
+  type User {
+    id: ID!
+    uuid: String!
+    email: String!
+    password: String!
+    first_name: String!
+    last_name: String!
+    phone: String
+    avatar: String
+    created_at: DateTime!
+    updated_at: DateTime!
+    deleted_at: DateTime
+    is_active: Boolean!
+    is_verified: Boolean!
+  }
+
+  input CreateUserInput {
+    email: String!
+    password: String!
+    first_name: String!
+    last_name: String!
+    phone: String
+    avatar: String
+  }
+
+  type Mutation {
+    createUser(input: CreateUserInput!): User!
+  }
+`

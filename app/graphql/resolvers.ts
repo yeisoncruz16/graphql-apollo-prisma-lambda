@@ -1,14 +1,7 @@
-import container from '../dependencyInjection'
-
-const createUser = (): any => {
-  container.get('services.user').createUser()
-  return {
-    name: 'yac'
-  }
-}
+import * as usersResolvers from '../services/users/resolvers'
 
 export default {
   Mutation: {
-    createUser
+    ...usersResolvers
   }
 }
