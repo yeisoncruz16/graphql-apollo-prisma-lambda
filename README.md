@@ -1,2 +1,2 @@
-# tinfluence
-A simple referral system
+# Template
+A small template with GraphQL, Apollo and Prisma
